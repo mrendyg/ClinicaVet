@@ -14,6 +14,7 @@ import java.util.List;
 @RequestMapping("/api/dueno")
 public class DuenoController {
 
+
     @Autowired
     private DuenoRepository duenoRepository;
 

@@ -37,6 +37,7 @@ public class MascotaController {
         return mascotaService.getsIdMascota(id);
     }
 
+
     @PostMapping("/create")
     @ResponseStatus(HttpStatus.CREATED)
     public MascotaEntity createMascota(@RequestBody MascotaEntity mascota){

@@ -14,6 +14,7 @@ import lombok.Setter;
 @Table(name = "mascota")
 public class MascotaEntity {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

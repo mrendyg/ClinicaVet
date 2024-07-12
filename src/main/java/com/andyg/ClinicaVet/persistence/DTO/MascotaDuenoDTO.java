@@ -22,4 +22,5 @@ public class MascotaDuenoDTO {
     private String ApellidoDueno;
 
 
+
 }

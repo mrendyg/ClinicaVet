@@ -8,4 +8,5 @@ import java.util.List;
 public interface MascotaRepository extends JpaRepository<MascotaEntity, Long> {
 
 
+
 }

@@ -10,6 +10,7 @@ import java.util.List;
 @Service
 public class DuenoService {
 
+
     @Autowired
     private DuenoRepository duenoRepository;
 

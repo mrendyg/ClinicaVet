@@ -73,6 +73,7 @@ public class MascotaService {
         List<MascotaEntity> listaMascotas = this.listsMascota();
         List<MascotaEntity> listaMascotaCaniche = new ArrayList<MascotaEntity>();
 
+
         for(MascotaEntity mascotaEntity : listaMascotas){
             keywordCompare1 = mascotaEntity.getEspecie();
             keywordCompare2 = mascotaEntity.getRaza();
