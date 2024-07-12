@@ -63,4 +63,28 @@ public class MascotaService {
         return mascotaDuenoDTOList;
     }
 
+    //Buque de mascotas especie perro raza caniche
+    public List<MascotaEntity> getsMarcotaCaniche(){
+        String keyword1 = "Perro";
+        String keyword2 = "Caniche";
+        String keywordCompare1;
+        String keywordCompare2;
+
+        List<MascotaEntity> listaMascotas = this.listsMascota();
+        List<MascotaEntity> listaMascotaCaniche = new ArrayList<MascotaEntity>();
+
+        for(MascotaEntity mascotaEntity : listaMascotas){
+            keywordCompare1 = mascotaEntity.getEspecie();
+            keywordCompare2 = mascotaEntity.getRaza();
+            boolean contienePerro = keywordCompare1.contains(keyword1);
+            boolean contieneCaniche = keywordCompare2.contains(keyword2);
+
+            if (contienePerro && contieneCaniche){
+                listaMascotaCaniche.add(mascotaEntity);
+            }
+        }
+
+        return listaMascotaCaniche;
+    }
+
 }

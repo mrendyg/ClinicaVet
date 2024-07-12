@@ -25,6 +25,4 @@ public class DuenoEntity {
     private String apellido;
     private int celular;
 
-    @OneToOne(mappedBy = "dueno")
-    private MascotaEntity mascota;
 }

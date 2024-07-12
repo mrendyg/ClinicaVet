@@ -60,4 +60,10 @@ public class MascotaController {
     public List<MascotaDuenoDTO> listMascotaDueno(){
         return mascotaService.getMascotaDueno();
     }
+
+    @GetMapping("/caniche")
+    @ResponseStatus(HttpStatus.OK)
+    public List<MascotaEntity> getMascotaCaniche(){
+        return mascotaService.getsMarcotaCaniche();
+    }
 }
